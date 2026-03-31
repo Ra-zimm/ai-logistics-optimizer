@@ -1,0 +1,14 @@
+numpy
+pandas
+scikit-learn
+torch
+ortools
+gymnasium
+streamlit
+pytest
+pyyaml
+stable-baselines3
+pydeck
+matplotlib
+seaborn
+scipy
