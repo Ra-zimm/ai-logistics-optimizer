@@ -1,6 +1,6 @@
 # AI Logistics System 🚛
 
-An Academic MSc-level Reinforcement Learning and Logistics Optimization engine. This repository actively develops and evaluates baseline static routing (VRP), dynamically self-adapting systems tracking real-time traffic bottlenecks, advanced Capacitated logic with Time Windows (CVRPTW), and standard Reinforcement Learning (RL) natively integrating execution arrays.
+An Academic MSc-level Reinforcement Learning and Logistics Optimization engine. This repository actively develops and evaluates baseline static routing, dynamically self-adapting systems tracking real-time traffic bottlenecks, and standard Reinforcement Learning (RL) natively integrating execution arrays.
 
 ## 📁 Repository Structure
 
@@ -18,14 +18,13 @@ ai_logistics_system/
 │   ├── train_rl.py             # Gymnasium/PPO agent training natively
 │   ├── batch_benchmark.py      # Produces multi-run analytical datasets tracking to CSV 
 │   ├── visualize_results.py    # Plots Seaborn visual Analytics on generated datasets
-│   ├── test_advanced.py        # Proves full vehicle payload capacity & strict delivery Time-Window limits 
 │   └── ab_test.py              # A/B Paired T-Test statistical confidence evaluation
 │
 ├── src/
-│   ├── data_ingestion/         # Geometric array configurations & mathematical package scaling
+│   ├── data_ingestion/         # Geometric array configurations & GPS map generation
 │   ├── evaluation/             # Standard analytic trackers (Fuel estimates, Routing Delays, Expected Distances)
 │   ├── optimization/           # OR-Tools exact constraints, Reinforcement agents, Dynamic logic evaluators
-│   └── simulation/             # Discrete Traffic Sine-Wave structures and Global Weather multipliers
+│   └── simulation/             # Discrete Traffic Sine-Wave structures and dynamic roadblock multipliers
 │
 └── requirements.txt            # System dependency structure
 ```
@@ -35,11 +34,8 @@ ai_logistics_system/
 Ensure you have a standard Python implementation installed and explicitly initialize the environment:
 
 ```bash
-cd D:\Project_Advait\ai_logistics_system
 pip install -r requirements.txt
 ```
-
-*(Note: Depending on your exact system bounds, libraries like `pydeck`, `seaborn`, `scipy`, and `stable-baselines3` will install sequentially to fully enable the backend.)*
 
 ---
 
@@ -70,13 +66,7 @@ If you need high-resolution graphics embedding exactly into standard academic do
     python scripts/visualize_results.py
     ```
 
-### 4. Advanced Realism Track (CVRPTW & Physics)
-Explore the deeply advanced optimization loops completely mimicking live industry tracking execution. Runs rigorous code incorporating maximum vehicle kilograms payload restrictions, incredibly tight chronological arrival minutes, continuous sinusoidal harmonic rush-hour delays mapping absolute real-world peaks, and severe atmospheric modifiers (`storm`, `snow` matrices).
-```bash
-python scripts/test_advanced.py
-```
-
-### 5. Reinforcement Learning Logic (Neural Evaluation)
+### 4. Reinforcement Learning Logic (Neural Evaluation)
 Instantiate a fully decoupled custom physics mapped `Gymnasium Environment`. Defines literal agent restrictions bounding severe explicit penalties (-1000 scoring arrays on illegal target visits) running purely executing standard Stable-Baselines3 Proximal Policy Optimization (PPO) mathematical arrays natively to learn graph geometries independently!
 ```bash
 python scripts/train_rl.py
